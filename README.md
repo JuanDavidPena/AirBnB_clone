@@ -1,4 +1,6 @@
 ## Description 
+First step: Write a command interpreter to manage your AirBnB objects.
+This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
 
 The project currently only implements the back-end console.
 
@@ -131,13 +133,13 @@ Unittests for the HolbertonBnB project are defined in the [tests](./tests)
 folder. To run the entire test suite simultaneously, execute the following command:
 
 ```
-$ python3 unittest -m discover tests
+$ python3 -m unittest discover tests
 ```
 
 Alternatively, you can specify a single test file to run at a time:
 
 ```
-$ python3 unittest -m tests/test_console.py
+$ python3 -m unittest tests/test_console.py
 ```
 
 ## Authors :black_nib:
