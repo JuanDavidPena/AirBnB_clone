@@ -1,86 +1,164 @@
-
-.amenities_search {
+.places {
     display: flex;
     flex-direction: column;
-    height: 100%;
-}
-.amenities_panel{
-    width: 25%;
+    flex-wrap: wrap;
 }
 
-h3 {
-    font-weight: 600;
-    margin: auto 0 0 15%;
+h1 {
+    font-size: 30px;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 0;
 }
 
-h4 {
-    font-weight: 400;
-    font-size: 14px;
-    margin: 0 0 auto 15%;
+.list_places
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
 }
 
-button {
-    border: 0;
-    cursor: pointer;
-    font-size: 18px;
-    background-color: #FF5A5F;
-    color: #FFFFFF;
-    height: 48px;
-    width: 20%;
+.list_places li {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    padding: 0px 20px 20px 20px;
+    margin: 20px;
+    border: 1px solid #FF5A5F;
     border-radius: 4px;
-    margin: auto 30px auto auto;
+    height: calc(100% - 60px);
+    align-content: flex-start;
 }
 
-button:hover {
-    opacity: 0.9;
-}
-
-.dropdowns {
+.first_row {
     display: flex;
     flex-direction: row;
+    margin-bottom: 1%;
 }
 
-.dropdown_states,
-.dropdown_amenities {
-    opacity: 0;
-    background-color: #FAFAFA;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px;
-    margin: auto auto auto auto;
+.price_by_night {
+    display: flex;
+    color: #FF5A5F;
+    border: 4px solid #FF5A5F;
+    border-radius: 50%;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-.amenities_panel:hover .dropdown_amenities{
-    opacity: 1;
-    position: relative;
-    z-index: 99;
+.heading_places {
+    font-size: 30px;
+    margin: 5% auto auto 35%;
+    padding: 0;
+    text-align: center;
 }
 
-.location_panel:hover .dropdown_states{
-    opacity: 1;
-    position: relative;
-    z-index: 99;
+.heading_places_house {
+    font-size: 30px;
+    margin: 5% auto auto 28%;
+    padding: 0;
+    text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 8%;
+.information {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    justify-content: center;
 }
 
-h2 {
+.max_guest, 
+.number_rooms,
+.number_bathrooms {
+    width: 100px;
+    display: flex;
+    flex-flow: column;
+    background-position: center;
+    background-position-y: 20%;
+}
+
+.information_headings {
+    margin: 55% auto 5% auto; 
+}
+
+.user {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.amenities {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.article_section {
     font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 3%;    
+}
+
+.list_amenities {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+}
+
+.amenities_icons {
+    display: flex;
+    flex-direction: row;
+    background-position: left;
+    background-size: 5%;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.amenity_name {
+    margin-left: 8%;
+}
+
+.list_reviews {
+    list-style: none;
+    padding: 0;
+}
+
+.review {
+    margin-bottom: 3%;
+}
+
+.user_review_descp {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.user_review {
+    font-size: 12px;
 }
 
 @media screen and (max-width: 575px) {
-    .filters {
+    .places {
         width: 100%;
     }
 
-    .filters .locations,
-    .filters .amenities {
-        width: 100%;
-    }
-    .filters .locations {
-        border-bottom: 1px solid #dddddd;
+    article {
+        margin: 20px 0;
+        padding: 10px;
         width: 100%;
     }
 }
