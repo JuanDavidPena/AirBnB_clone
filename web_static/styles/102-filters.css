@@ -1,23 +1,3 @@
-.filters {
-    display: flex;
-    background-color: white;
-    height: 70px;
-    width: 100%;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px;
-}
-
-.location_panel{
-    width: 25%;
-}
-.locations{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.locations {
-    border-right: 1px solid #DDDDDD;
-}
 
 .amenities_search {
     display: flex;

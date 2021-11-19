@@ -21,6 +21,12 @@ h1 {
     justify-content: center;
 }
 
+.list_places li {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+
 article {
     display: flex;
     flex-direction: column;
@@ -149,10 +155,10 @@ article {
     .places {
         width: 100%;
     }
+
     article {
         margin: 20px 0;
         padding: 10px;
-        max-width: 95%;
+        width: 100%;
     }
-
 }
